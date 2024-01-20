@@ -7,6 +7,9 @@
         android:label="geotest"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
+        <!-- TODO ajouter la clé d'api google ICI -->
+        <meta-data android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDesWK-6_tKP3cIEaeNuS6kK6Kdsj5ajDw"/>
         <activity
             android:name=".MainActivity"
             android:exported="true"

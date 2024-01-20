@@ -3,6 +3,7 @@
 <plist version="1.0">
 <dict>
 
+    <!-- TODO ajouter pour avoir l'emplacement du téléphone -->
     <key>NSLocationWhenInUseUsageDescription</key>
     <string>This app needs access to location when open.</string>
     <key>NSLocationAlwaysUsageDescription</key>
@@ -12,6 +13,10 @@
       <key>YourPurposeKey</key>
       <string>The example App requires temporary access to the device&apos;s precise location.</string>
     </dict>
+
+    <!-- TODO ajouter pour les maps google
+    <key>io.flutter.embedded_views_preview</key>
+    <true/> -->
 
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>

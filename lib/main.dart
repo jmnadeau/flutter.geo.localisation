@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:geotest/distance.dart';
 import 'package:geotest/interval.dart';
+import 'package:geotest/map.dart';
 import 'package:geotest/position.dart';
+
+import 'maplines.dart';
 
 void main() {
   runApp(const MyApp());
@@ -99,8 +102,22 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Text('Distance entre 2 points')
             ),
             ElevatedButton(
-                onPressed: () { },
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const MapPage()),
+                  );
+                },
                 child: Text('Ouvrir une carte google')
+            ),
+            ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const MapLinesPage()),
+                  );
+                },
+                child: Text('Ajouter les lignes sur une carte')
             ),
           ],
         ),
